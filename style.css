@@ -91,7 +91,8 @@ text-align: center;
     position: relative;
 }
 #statistics h1{
-    background-color: white;
+    color: white;
+    font-size: 25px;
     width: 1300px;
     height: 50px;
     position: absolute;
@@ -100,15 +101,25 @@ text-align: center;
     transform: translateX(-50%);
     text-align: center;
 }
-#statistics div{
-    background-color: white;
+#statistics .container{
+    display: flex;
+    justify-content: space-between;
     width: 1300px;
-    height: 150px;
+    height: 50px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translateX(-50%);
+    
 }
+#statistics .item{
+    font-size: 25px;
+    color: white;
+    text-align: center;
+
+  }
+
+
 #service{
     display: grid;
     grid-template-columns: 300px 1fr 1fr;
@@ -148,24 +159,43 @@ text-align: center;
     background-image: url(./img/bg.jpg);
     height: 55vh;
     position: relative;
+    
+}
+#ava{
+display: flex;
 }
 #Testimonial img{
     border-radius: 50%;
+    text-align: center;
+}
+.name{
+    color: orange;
 }
 #Testimonial h1{
+    color: white;
     text-align: center;
-    background-color: white;
 }
-#blog{
+#Testimonial p{
+    color: white;
+}
+#Our-blog .blog{
     display: grid;
-    grid-template-columns: 300px 300px 300px;
-    grid-template-rows: auto auto;
-    width: 100%;
-    height: 500px;
-    column-gap: 10px;
-    row-gap: 10px;
+    justify-content: center;
+    grid-template-areas: 
+    'a b c'
+    'a b c';
+    grid-template-columns: 358px 358px 358px;
+    grid-template-rows: 200px 200px;
+    column-gap: 20px;
+    }
+#Our-blog h1{
     text-align: center;
 }
-#pic1{
-    
+.pic1{ grid-area: a;}
+.pic2{grid-area: b;}
+.pic3{grid-area: c;}
+#contact-us h1{
+    text-align: center;
 }
+
+
