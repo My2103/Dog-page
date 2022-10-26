@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    border: solid 2px tomato;
+    border: solid 2px skyblue;
 }
 body {
     margin: 0;
@@ -166,7 +166,6 @@ display: flex;
 }
 #Testimonial img{
     border-radius: 50%;
-    text-align: center;
 }
 .name{
     color: orange;
@@ -185,17 +184,32 @@ display: flex;
     'a b c'
     'a b c';
     grid-template-columns: 358px 358px 358px;
-    grid-template-rows: 200px 200px;
+    grid-template-rows: auto auto;
     column-gap: 20px;
     }
+    
 #Our-blog h1{
     text-align: center;
 }
 .pic1{ grid-area: a;}
 .pic2{grid-area: b;}
 .pic3{grid-area: c;}
+#contact-us{
+    padding-left: 100px;
+    padding-right: 100px;
+}
 #contact-us h1{
     text-align: center;
+}
+#infor{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+#end{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    color: white;
+    background-color: black;
 }
 
 
